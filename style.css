@@ -39,9 +39,11 @@ a{
     background-color: var(--DarkBlue);
     border-radius: 10px;;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 80px;
     padding: 30px;
 }
+
+
 
 .container .star{
     border-radius: 50%;
@@ -70,6 +72,7 @@ a{
    color: rgba(255, 255, 255,0.5);
    display: flex;
    margin-bottom: 20px;
+   cursor: pointer;   
 }
 
 .rating-list li:hover{
@@ -100,6 +103,7 @@ button{
     width: 100%;
     background-color: var(--Orange);
     color: white;
+    cursor: pointer;
 }
 
 button:hover{
@@ -114,7 +118,7 @@ button:hover{
    align-items: center;
    margin-bottom: 25px;
    margin-top: -310px;
-  
+   transition: all 0.3sec ease-in;
 }
 
 .receipt-img{
@@ -148,7 +152,44 @@ color: rgba(255, 255, 255,0.6);
 
 .submit{
     visibility: hidden;
+   
 }
+.visible{
+    visibility: hidden;
+}
+
+ .show-class{
+    visibility: visible;
+}
+
+
+@media (min-width:800px) {
+    .container,.submit{
+     margin-top: 200px;
+     margin-bottom: 20px;
+     
+}
+
+.container{
+    position: relative;
+}
+
+.submit{
+    position: absolute;
+    left: 0;
+    right:0;
+    top:0;
+}
+}
+
+@media (min-width:360px) and (max-width:390px) {
+    .container,.submit{
+     max-width: 350px;
+}
+
+}
+
+
 
 /* .container{
     visibility: hidden;

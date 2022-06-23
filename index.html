@@ -48,7 +48,7 @@
   <div class="submit">
    
     <img class="receipt-img" src="./images/illustration-thank-you.svg">
-  <p class="selection">You selected <!-- Add rating here --> out of 5</p>
+  <p class="selection">You selected <span class="rate">0</span> out of 5</p>
 
   <h4>Thank you!</h4>
 
@@ -62,5 +62,23 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Ajimati Taiye</a>.
   </div>
+  <script src="./index.js">
+  </script>
+
+  <!-- <script>
+    let ratingOption = document.querySelectorAll(".rating-options")
+    let ratings = document.querySelector("span")
+    for( let i=0; i<ratingOption.length; i++){
+    ratingOption[i].addEventListener('click', ratingSelection)
+    }
+
+    function ratingSelection(){
+    // console.log(this.innerText)
+   ratings.textContent =ratingOption[this.innerText-1].innerText
+    }
+ -->
+
+
+  </script>
 </body>
 </html>

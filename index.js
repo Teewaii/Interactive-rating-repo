@@ -8,12 +8,11 @@ let alertMsg = document.querySelector(".alert")
 
 for (let i = 0; i < ratingOption.length; i++) {
     ratingOption[i].addEventListener('click', ratingSelection)
+
 }
 
 function ratingSelection() {
-
     ratings.textContent = ratingOption[this.innerText - 1].innerText
-
 }
 
 submitBtn.addEventListener('click', submitButton)
@@ -26,3 +25,8 @@ function submitButton() {
         alertMsg.classList.toggle('alert')
     }
 }
+
+// ratingOption[1].addEventListener('click', function onClick(event) {
+//     event.target.style.backgroundColor = 'salmon';
+
+// });

@@ -11,8 +11,9 @@ for (let i = 0; i < ratingOption.length; i++) {
 }
 
 function ratingSelection() {
-s
+
     ratings.textContent = ratingOption[this.innerText - 1].innerText
+
 }
 
 submitBtn.addEventListener('click', submitButton)

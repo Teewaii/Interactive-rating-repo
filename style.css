@@ -1,43 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Inter:wght@100;200;300;400;600;700;800&family=Karla:wght@200;300;400;500;600;700;800&family=Lato:wght@100;400&family=Outfit:wght@300;400;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@300&display=swap');
 
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-:root{
+:root {
 
-/* Primary */
+    /* Primary */
 
---Orange: hsl(25, 97%, 53%);
+    --Orange: hsl(25, 97%, 53%);
 
-/* Neutral */
+    /* Neutral */
 
---White: hsl(0, 0%, 100%);
---LightGrey: hsl(217, 12%, 63%);
---MediumGrey: hsl(216, 12%, 54%);
---DarkBlue: hsl(213, 20%, 18%);
---VeryDarkBlue: hsl(216, 12%, 8%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 20%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
 
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    background-color:var(--VeryDarkBlue);
+    background-color: var(--VeryDarkBlue);
     color: white;
     font-size: 14px;
     font-weight: normal;
 }
 
-a{
+a {
     text-decoration: none;
 }
-.container,.submit{
+
+.container,
+.submit {
     max-width: 375px;
     background-color: var(--DarkBlue);
-    border-radius: 10px;;
+    border-radius: 10px;
+    ;
     margin: auto;
     margin-top: 80px;
     padding: 30px;
@@ -45,15 +48,15 @@ a{
 
 
 
-.container .star{
+.container .star {
     border-radius: 50%;
     height: 28px;
     padding: 9px;
-    background-color: rgba(124, 135, 152,.15);
+    background-color: rgba(124, 135, 152, .15);
     margin-bottom: 10px;
 }
 
-.container h3{
+.container h3 {
     color: white;
     font-size: 20px;
     font-weight: 500;
@@ -61,74 +64,76 @@ a{
 }
 
 .rating-body {
-    color: rgba(255, 255, 255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     text-align: left;
     margin-bottom: 20px;
 }
 
-.rating-list{
-   list-style: none;
-   color: rgba(255, 255, 255,0.5);
-   display: flex;
-   margin-bottom: 20px;
-   cursor: pointer;   
+.rating-list {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
-.rating-list li:hover{
-   background-color: var(--Orange);
-   color: white;  
+.rating-list li:hover {
+    background-color: var(--Orange);
+    color: white;
 }
 
-.rating-list li:active{
-   background-color: var(--LightGrey);
-   color: white;  
+.rating-list li:active {
+    background-color: var(--LightGrey);
+    color: white;
 }
 
-.rating-list li{
+.rating-list li {
     margin-right: 25px;
-    border-radius: 50%; 
-    background-color: rgba(124, 135, 152,.15);
-   padding: 5px 12px;
-}
-.rating-list li:first-child{
-   padding: 5px 14px;
+    border-radius: 50%;
+    background-color: rgba(124, 135, 152, .15);
+    padding: 5px 12px;
 }
 
-button{
+.rating-list li:first-child {
+    padding: 5px 14px;
+}
+
+button {
     display: block;
-    padding:12px;
+    padding: 12px;
     border-radius: 25px;
     border-style: none;
     width: 100%;
     background-color: var(--Orange);
     color: white;
     cursor: pointer;
+    margin-bottom: 5px;
 }
 
-button:hover{
+button:hover {
     background-color: var(--White);
     color: var(--Orange)
 }
 
 
-.submit{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-bottom: 25px;
-   margin-top: -310px;
-   transition: all 0.3sec ease-in;
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: -310px;
+    transition: all 0.3sec ease-in;
 }
 
-.receipt-img{
+.receipt-img {
     height: 70px;
     width: 110px;
     margin-bottom: 18px;
 }
 
-.selection{
-    background-color: rgba(124, 135, 152,.15);
+.selection {
+    background-color: rgba(124, 135, 152, .15);
     padding: 8px 15px;
     border-radius: 20px;
     padding: 10;
@@ -138,72 +143,71 @@ button:hover{
     margin-bottom: 18px;
 }
 
-.submit h4{
+.submit h4 {
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 18px;
 }
 
-.submit-body{
-color: rgba(255, 255, 255,0.6);
+.submit-body {
+    color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     text-align: center;
 }
 
-.submit{
+.submit {
     visibility: hidden;
-   
+
 }
-.visible{
+
+.visible {
     visibility: hidden;
 }
 
- .show-class{
+.show-class {
     visibility: visible;
 }
 
 
+.alert {
+    visibility: hidden;
+}
+
 @media (min-width:800px) {
-    .container,.submit{
-     margin-top: 200px;
-     margin-bottom: 20px;
-     
-}
 
-.container{
-    position: relative;
-}
+    .container,
+    .submit {
+        margin-top: 150px;
+        margin-bottom: 20px;
 
-.submit{
-    position: absolute;
-    left: 0;
-    right:0;
-    top:0;
-}
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .submit {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
 }
 
 @media (min-width:360px) and (max-width:390px) {
-    .container,.submit{
-     max-width: 350px;
-}
+
+    .container,
+    .submit {
+        max-width: 350px;
+    }
 
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
 
-
-/* .container{
-    visibility: hidden;
-}  */
-
-
-/* .test{
-    display: inline;
-    border-radius: 50%;    
-    background-color: rgba(124, 135, 152,.15);
-    font-size: 12px;
-    padding: 6px 12px;
-    color: rgba(255, 255, 255,0.5);
-} */
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color:var(--Orange); }
+.attribution a {
+    color: var(--Orange);
+}

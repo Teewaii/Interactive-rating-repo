@@ -120,7 +120,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     margin-top: -310px;
     transition: all 0.3sec ease-in;
 }
@@ -168,9 +168,6 @@ button:hover {
 }
 
 
-.alert {
-    visibility: hidden;
-}
 
 @media (min-width:800px) {
 

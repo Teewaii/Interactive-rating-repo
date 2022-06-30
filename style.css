@@ -77,24 +77,25 @@ a {
     cursor: pointer;
 }
 
-.rating-list li:hover {
+
+ .rating-options:hover {
     background-color: var(--Orange);
     color: white;
 }
 
-.rating-list li:active {
+.rating-options:active {
     background-color: var(--LightGrey);
     color: white;
 }
 
-.rating-list li {
+.rating-options  {
     margin-right: 30px;
     border-radius: 50%;
-    background-color: rgba(124, 135, 152, .15);
+    background-color: rgba(124, 152, 124, 0.15);
     padding: 5px 12px;
 }
 
-.rating-list li:first-child {
+.rating-options:first-child {
     padding: 5px 14px;
 }
 
@@ -168,6 +169,11 @@ button:hover {
 }
 
 
+.active {
+    background-color: var(--LightGrey)
+   
+    
+}
 
 @media (min-width:800px) {
 

@@ -26,3 +26,16 @@ function submitButton() {
         alertMsg.innerText ='Please select a valid rating value';
     }
 }
+
+
+
+ratingOption.forEach(btn=>btn.addEventListener('click',selectedOpt));
+
+
+function selectedOpt(e){
+    ratingOption.forEach(btn=>{
+        btn.classList.remove('active');
+   });
+       e.target.classList.add('active')
+   
+}
